@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <listeners>
+	<listener class-name = "com.test.automation.Listeners.MyListeners" />
+</listeners> 
+		
+  <test name="Chrome_Browser_TestCases">
+    <classes>
+      <class name="com.test.automation.TestCases.LoginPage_TC"/>
+    </classes>
+  </test>
+  
+ <!--  <test name="Firefox_Browser_TestCases">
+    <classes>
+      <class name="com.test.automation.TestCases.LoginPage_TC"/>
+    </classes>
+  </test>  -->
+  
+</suite> 

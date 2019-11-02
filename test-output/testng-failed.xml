@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.test.automation.Listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="Chrome_Browser_TestCases(failed)">
+    <parameter name="urlToBeTested" value="http://182.71.221.77/CTMPPhase2/index.aspx"/>
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.test.automation.TestCases.LoginPage_TC">
+        <methods>
+          <include name="report_generation"/>
+          <include name="retry"/>
+          <include name="tear_down"/>
+          <include name="flush_report"/>
+          <include name="browser_init"/>
+        </methods>
+      </class> <!-- com.test.automation.TestCases.LoginPage_TC -->
+    </classes>
+  </test> <!-- Chrome_Browser_TestCases(failed) -->
+  <test thread-count="5" name="Firefox_Browser_TestCases(failed)">
+    <parameter name="urlToBeTested" value="http://182.71.221.77/CTMPPhase2/index.aspx"/>
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.test.automation.TestCases.LoginPage_TC">
+        <methods>
+          <include name="report_generation"/>
+          <include name="retry"/>
+          <include name="tear_down"/>
+          <include name="flush_report"/>
+          <include name="browser_init"/>
+        </methods>
+      </class> <!-- com.test.automation.TestCases.LoginPage_TC -->
+    </classes>
+  </test> <!-- Firefox_Browser_TestCases(failed) -->
+</suite> <!-- Failed suite [Suite] -->
